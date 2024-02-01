@@ -20,6 +20,8 @@
    }
    .navbar{
    display: flex;
+   height: 32px;
+   /* border: 2px solid red; */
    justify-content: space-between;
    align-items: center;
    text-align: center;
@@ -33,19 +35,21 @@
        line-height: 32px;
        letter-spacing: 0px;
        text-align: left;
+       /* border: 2px solid red; */
        
    }
    
    .right_part{
        display: flex;
        gap: 28px;
+       /* border: 2px solid red; */
    }
    .right_part>div:nth-child(2){
        width: 42px;
        border-radius: 40px;
    }
    .right_part>div:nth-child(2)>img{
-       border: 2px solid red;
+       /* border: 2px solid red; */
        border-radius: 40px;
        width: 30px;
        height: 30px;
@@ -54,18 +58,22 @@
    .drop_part{
        width: 596px;
        border-radius: 4px;
+       
        background-color: white;
        padding: 16px;
        margin-left: 270px;
    }
    .inerPart{
     border: 1px dashed gray;
+    /* border: 2px solid red; */
+    /* margin-top: 87px; */
     border-radius: 4px; 
     padding: 98px 148px 84px 148px;  
    }
    .btn1{
        color: white;
        width: 100%;
+       max-height: 52px;
        margin: auto;
        margin-top:13px;
        display: flex;
@@ -80,5 +88,34 @@
     margin-right: 5px;
    }
 
+   .btn1:hover {
+    background-color: #5147e2;
+  }
 
+.excel{
+    width: 267px;
+    height: 76px;
+    /* border: 2px solid red; */
+    margin-top: 87px;
 
+    margin: auto;
+    align-items: center;
+}
+
+.table{
+   width:  1065px;
+   top: 689px;
+   left: 84px;
+   border: 2px solid red;
+   margin-top: 120px;
+}
+
+.table>div:first-child>p{
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 0px;
+}

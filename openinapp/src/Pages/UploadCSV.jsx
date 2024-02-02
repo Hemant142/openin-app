@@ -5,12 +5,13 @@ import { FaRegBell } from "react-icons/fa";
 import { HiOutlineUpload } from "react-icons/hi";
 import excel from "../Images/excel.png";
 import { ColorRing } from "react-loader-spinner";
+import Tables from "./Tables";
 export default function UploadCSV() {
   const [toggle, setToggle] = useState(false);
-  const [tableloader,setTableLoader]=useState(true)
-  const handleUpload=()=>{
-setToggle(true)
-  }
+  const [tableloader, setTableLoader] = useState(true);
+  const handleUpload = () => {
+    setToggle(true);
+  };
   return (
     <div className="mainContainer">
       <div className="sidebar">
@@ -64,7 +65,7 @@ setToggle(true)
                 )}
               </div>
             </div>
-            <button className="btn1" onClick={ handleUpload}>
+            <button className="btn1" onClick={handleUpload}>
               {" "}
               {toggle ? (
                 <ColorRing
@@ -81,11 +82,13 @@ setToggle(true)
               )}
             </button>
           </div>
-{tableloader?( <div className="table">
-            <div>
-              <p className="paragraph">Upload</p>
+          {tableloader ? (
+            <div className="table">
+              <Tables />
             </div>
-          </div>):(<div></div>)}
+          ) : (
+            <div></div>
+          )}
           {/* <div className="table">
             <div>
               <p className="paragraph">Upload</p>
